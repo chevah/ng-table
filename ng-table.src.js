@@ -223,9 +223,6 @@ angular.module("ngTable", []).directive("ngTable", [
   }
 ]);
 
-/*
-//@ sourceMappingURL=directive.js.map
-*/
 var __hasProp = {}.hasOwnProperty;
 
 angular.module("ngTable").factory("ngTableParams", function() {
@@ -312,9 +309,6 @@ angular.module("ngTable").factory("ngTableParams", function() {
   return ngTableParams;
 });
 
-/*
-//@ sourceMappingURL=params.js.map
-*/
 angular.module('ngTable').run(['$templateCache', function ($templateCache) {
 	$templateCache.put('ng-table/filters/button.html', '<button ng-click="doFilter()" ng-show="filter==\'button\'" class="btn btn-primary btn-block">Filter</button>');
 	$templateCache.put('ng-table/filters/select.html', '<select ng-options="data.id as data.title for data in column.data" ng-model="params.filter[name]" ng-show="filter==\'select\'" class="filter filter-select"></select>');
